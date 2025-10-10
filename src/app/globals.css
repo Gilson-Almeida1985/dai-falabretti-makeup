@@ -1,0 +1,269 @@
+/* Importação de Fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset Básico e Estilos Globais */
+:root {
+  --primary-color: #D3A4A4; /* Tom de rosa queimado/nude */
+  --secondary-color: #B2837A;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  background-color: #fff;
+  color: var(--dark-color);
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* CORREÇÃO 1: AUMENTO DA LOGO */
+.logo-img {
+  /* Ajuste a altura para um valor maior e mais adequado à barra de navegação. */
+  height: 80px; 
+  /* Adicione uma largura máxima para garantir que ela não estique demais */
+  max-width: 200px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.header nav ul li {
+  margin-left: 2rem;
+}
+
+.header nav ul li a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  /* CORREÇÃO 2: CAMINHO ABSOLUTO E MARGIN PARA CABEÇALHO */
+  /* Utilize o nome exato do arquivo que está na sua pasta 'public' */
+  background: url('/hero.png') no-repeat center center/cover;
+  background-position: center 35%;
+  color: white; /* Cor do texto no Hero */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  position: relative;
+  /* Garante que o conteúdo não fique escondido sob o Header fixo */
+  margin-top: 72px; 
+  padding: 0 1rem;
+}
+
+.hero-overlay {
+  /* Cor e opacidade que escurece levemente a imagem para o texto contrastar */
+  background-color: rgba(0, 0, 0, 0.2); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+  color: white; /* Garante que o H1 seja branco */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--light-color);
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 350px;
+  min-width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: var(--light-color);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-grid img { 
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Contact Section */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-info a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    height: auto; 
+  }
+
+  .header nav ul {
+    padding: 0.5rem 0;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  .header nav ul li {
+    margin: 0.5rem 1rem; 
+  }
+
+  .hero {
+    height: 80vh;
+    margin-top: 100px; 
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
