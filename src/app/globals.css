@@ -49,7 +49,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.2rem 2rem;
   background: #fff;
   border-bottom: 1px solid #ddd;
   position: fixed;
@@ -95,7 +95,7 @@ h2 {
 
 /* Hero Section */
 .hero {
-  height: 80vh;
+  height: 95vh;
   /* CORREÇÃO 2: CAMINHO ABSOLUTO E MARGIN PARA CABEÇALHO */
   /* Utilize o nome exato do arquivo que está na sua pasta 'public' */
   background: url('/hero.png') no-repeat center center/cover;
@@ -107,7 +107,7 @@ h2 {
   text-align: center;
   position: relative;
   /* Garante que o conteúdo não fique escondido sob o Header fixo */
-  margin-top: 72px; 
+  margin-top: 90x;
   padding: 0 1rem;
 }
 
@@ -151,6 +151,10 @@ h2 {
 }
 
 /* Services Section */
+.services {
+  padding-top: 6rem;
+}
+
 .services-container {
   display: flex;
   justify-content: center;
@@ -180,8 +184,15 @@ h2 {
   color: var(--secondary-color);
 }
 
+.service-card .icon {
+  font-size: 2.5rem;
+  color: var(--secondary-color); /* tom de maquiagem */
+  margin-bottom: 10px;
+}
+
 /* Portfolio Section */
 .portfolio {
+  padding-top: 6rem;
   background-color: var(--light-color);
 }
 
@@ -205,11 +216,31 @@ h2 {
 }
 
 /* Contact Section */
+.contact {
+  background-color: var(--light-color);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 2rem;
+}
+
+
 .contact-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -221,6 +252,32 @@ h2 {
 }
 
 .contact-info a:hover {
+  color: var(--primary-color);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.contact-link:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
   color: var(--primary-color);
 }
 

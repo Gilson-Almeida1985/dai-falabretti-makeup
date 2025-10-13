@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <div className="logo-container">
         {/* Use o componente Image e o caminho da pasta public */}
-        <Image src="/logo-dai.png" alt="Dai Falabretti Makeup Logo" width={240} height={70} className="logo-img" />
+        <Image src="/logo-dai.svg" alt="Dai Falabretti Makeup Logo" width={240} height={70} className="logo-img" />
       </div>
       <nav>
         <ul>
