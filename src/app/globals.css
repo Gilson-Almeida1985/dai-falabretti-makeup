@@ -196,6 +196,15 @@ h2 {
   background-color: var(--light-color);
 }
 
+.portfolio h3 {
+  font-size: 1.9rem;
+  color: var(--secondary-color);
+  font-style: italic; 
+  font-weight: 700;
+  margin-bottom: 1.5rem; 
+  margin-top: 3rem; 
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
