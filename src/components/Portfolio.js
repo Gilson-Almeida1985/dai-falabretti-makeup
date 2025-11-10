@@ -2,14 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 
 // Os caminhos agora partem da pasta 'public'
-import makeup1 from '../../public/portfolios/makeup1.jpeg';
-import makeup_1 from '../../public/portfolios/makeup-1.jpeg';
-import makeup2 from '../../public/portfolios/makeup2.jpeg';
-import makeup3 from '../../public/portfolios/makeup3.jpeg';
-import makeup4 from '../../public/portfolios/makeup4.png';
-import makeup5 from '../../public/portfolios/makeup5.png';
-import makeup6 from '../../public/portfolios/makeup6.jpeg';
-import makeup_6 from '../../public/portfolios/makeup-6.jpeg';
+import makeup1 from '../../public/makeup1.jpeg';
+import makeup_1 from '../../public/makeup-1.jpeg';
+import makeup2 from '../../public/makeup2.jpeg';
+import makeup3 from '../../public/makeup3.jpeg';
+import makeup4 from '../../public/makeup4.jpeg';
+import makeup5 from '../../public/makeup5.jpeg';
+import makeup6 from '../../public/makeup6.jpeg';
+import makeup_6 from '../../public/makeup-6.jpeg';
 
 function Portfolio() {
   return (
