@@ -6,8 +6,8 @@ import makeup1 from '../../public/portfolio/makeup1.jpeg';
 import makeup_1 from '../../public/portfolio/makeup-1.jpeg';
 import makeup2 from '../../public/portfolio/makeup2.jpeg';
 import makeup3 from '../../public/portfolio/makeup3.jpeg';
-import makeup4 from '../../public/potfolio/makeup4.png';
-import makeup5 from '../../public/potfolio/makeup5.png';
+import makeup4 from '../../public/portfolio/makeup4.png';
+import makeup5 from '../../public/portfolio/makeup5.png';
 import makeup6 from '../../public/portfolio/makeup6.jpeg';
 import makeup_6 from '../../public/portfolio/makeup-6.jpeg';
 
