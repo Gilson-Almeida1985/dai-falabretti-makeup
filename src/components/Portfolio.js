@@ -16,7 +16,7 @@ function Portfolio() {
     <section id="portfolio" className="portfolio">
       <h2>Portfólio</h2>
       <div className="portfolio-grid">
-        <h3 className='services'>Maquiagem Social</h3>
+        <h3 className='services'>Maquiagem Social.</h3>
         <Image src={makeup_1} alt="Maquiagem profissional 1" placeholder="blur" />
         <Image src={makeup1} alt="Maquiagem profissional 1" placeholder="blur" />
         <Image src={makeup2} alt="Maquiagem profissional 2" placeholder="blur" />
