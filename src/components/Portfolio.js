@@ -25,6 +25,7 @@ function Portfolio() {
         <Image src={makeup5} alt="Maquiagem profissional 5" placeholder="blur" />
         <Image src={makeup_6} alt="Maquiagem profissional 6" placeholder="blur" />
         <Image src={makeup6} alt="Maquiagem profissional 6" placeholder="blur" />
+        <Image src={makeup6} alt="Maquiagem profissional 6" placeholder="blur" />
       </div>
     </section>
   );
