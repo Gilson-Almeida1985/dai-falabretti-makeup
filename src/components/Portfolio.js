@@ -6,9 +6,9 @@ import makeup1 from '../../public/makeup1.jpeg';
 import makeup_1 from '../../public/makeup-1.jpeg';
 import makeup2 from '../../public/makeup2.jpeg';
 import makeup3 from '../../public/makeup3.jpeg';
-import makeup4 from '../../public/makeup4.jpeg';
-import makeup5 from '../../public/makeup5.jpeg';
-import makeup6 from '../../public/makeup6.jpeg';
+import makeup4 from '../../public/makeup4.png';
+import makeup5 from '../../public/makeup5.png';
+import makeup6 from '../../public/makeup6.png';
 import makeup_6 from '../../public/makeup-6.jpeg';
 
 function Portfolio() {
