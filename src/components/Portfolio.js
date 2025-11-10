@@ -15,21 +15,10 @@ function Portfolio() {
   return (
     <section id="portfolio" className="portfolio">
       <h2>Portfólio</h2>
+
       {/* --- Categoria 1: Maquiagem Social --- */}
       <h3>Maquiagem Social</h3>
       <div className="portfolio-grid">
-<<<<<<< HEAD
-        <h3 className='services'>Maquiagem Social.</h3>
-        <Image src={makeup_1} alt="Maquiagem profissional 1" placeholder="blur" />
-        <Image src={makeup1} alt="Maquiagem profissional 1" placeholder="blur" />
-        <Image src={makeup2} alt="Maquiagem profissional 2" placeholder="blur" />
-        <Image src={makeup3} alt="Maquiagem profissional 3" placeholder="blur" />
-        <Image src={makeup4} alt="Maquiagem profissional 4" placeholder="blur" />
-        <Image src={makeup5} alt="Maquiagem profissional 5" placeholder="blur" />
-        <Image src={makeup_6} alt="Maquiagem profissional 6" placeholder="blur" />
-        <Image src={makeup6} alt="Maquiagem profissional 6" placeholder="blur" />
-        <Image src={makeup6} alt="Maquiagem profissional 6" placeholder="blur" />
-=======
         <Image src={makeup_1} alt="Maquiagem social 1" placeholder="blur" />
         <Image src={makeup1} alt="Maquiagem social 2" placeholder="blur" />
         {/* Adicione mais imagens de maquiagem social aqui... */}
@@ -63,8 +52,8 @@ function Portfolio() {
       <h3>Maquiagem para Ensaios Fotográficos</h3>
       <div className="portfolio-grid">
         {/* Adicione imagens de ensaios aqui... */}
->>>>>>> 0aa6c38 (Update correct)
       </div>
+
     </section>
   );
 }
